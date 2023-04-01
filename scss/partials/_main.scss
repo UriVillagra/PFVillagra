@@ -30,11 +30,16 @@ main {
                 }
                 p {
                     font-size: 3rem;
-                    margin-left: 5rem;
+                    margin: 0;
+                    margin-left: 1%;
                     margin-top: 4rem;
+                    margin-bottom: 2rem;
                     font-family: 'Bangers', cursive;
                     text-decoration: underline;
                     color: variables.$text-color;
+                    background-image: linear-gradient(to right, rgb(230, 255, 129), rgb(131, 255, 245));
+                    padding: 0.5rem;
+                    border: solid 0.2rem;
                 }
             }
             .img_container {

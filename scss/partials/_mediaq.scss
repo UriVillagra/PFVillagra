@@ -1,4 +1,6 @@
 @use './variables';
+
+
 @media screen and (max-width: 1200px) {
 
     header {
@@ -16,7 +18,6 @@
             }
             
             div {
-
                 background-image: variables.$header-image;
                 li {
                     margin-left: 3rem;
@@ -41,210 +42,262 @@
 
 
     /*MAIN*/
+
     main {
         section {
             article {
-                div {
-                    a{
-                        text-decoration: none;
-                        
-                    }
+                width: 100%;
+                .index-info {
                     h1 {
-                        margin-top: 2rem;
                         font-size: 3rem;
-                        font-family: 'Russo One', sans-serif;
-                        background-image: linear-gradient(to right, rgb(36, 200, 255), rgb(111, 255, 111));
-                        border: solid 0.5rem;
-                        color: variables.$text-color;
-                        width: 100%;
-                        height: auto;
-                    }
-                    h2 {
-                        font-size: 2.2rem;
-                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                        margin-top: 2rem;
-                        margin-left: 2rem;
-                        width: 300px;
-                        height: 12rem;
-                        background-color: aqua;
-                        border: solid 0.2rem;
-                        font-style: oblique;
                         padding: 1rem;
-                    }
-                    p {
-                        font-size: 3rem;
-                        margin-left: 5rem;
-                        margin-top: 4rem;
-                        font-family: 'Bangers', cursive;
-                        text-decoration: underline;
-                        color: variables.$text-color;
                     }
                 }
                 .img_container {
-                    height: auto;
-                    width: 50%;
+                    width: 100%;
+                    h2 {
+                        margin-top: 4rem;
+                        margin-left: 0.8rem;
+                        font-size: 2rem;
+                        width: 100%;
+                    }
                     p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
+                        font-size: 2.5rem;
+                        width: 100%;
+                        margin-left: 0.8rem;
                         margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
+                        margin-top: 6rem;
                     }
                     img {
-                        height: 100%;
                         width: 100%;
-                        margin-top: 0rem;
-                        margin-left: 1rem;
-                    }
-
-                }
-                .posters {
-                    height: auto;
-                    width: 440px;
-                    margin-left: 0.5rem;
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        &:hover {
-                            transform: scale(1.1);
-                            transition: 400ms;
-                        }
+                        margin-left: 0.8rem;
                     }
                 }
                 .spotify {
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    height: 700px;
-                    width: 300px;
-                    margin-left: 6rem;
-                    iframe {
-                        height: 75%;
-                        width: 100%;
-                    }
-                }
-                .video {
-                    p {
-                        background-color: rgb(163, 255, 255);
-                        border: solid 0.2rem;
-                        width: 100%;
-                        margin: 0;
-                        padding: 1rem;
-                    }
-                    height: 800px;
-                    margin-left: 1rem;
-                    iframe {
-                        margin-top: 1rem;
-                        height: 30%;
-                        width: 100%;
-                    }
-                }
-
-                .playlist {
-                    height: 100%;
                     width: 100%;
-                    margin-left: 6rem;
-                    margin-top: 3rem;
-                    width: 300px;
-                    height: 500px;
-                    iframe {
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-                .titulo{
-                    background-color: aquamarine;
-                    border: solid 0.2rem;
-                    margin: 2rem;
-                    padding: 1rem;
-                    text-decoration: none;
-                
-                }
-                .playlist__text {
-                background-color: rgb(177, 255, 98);
+                    margin: 0;
+                    margin-top: 6rem;
+                    margin-bottom: 6rem;
                     p {
                         font-size: 3rem;
+                        width: 100%;
+                        margin: 0;
+                        margin-left: 0.8rem;
+                        background-color: burlywood;
+                        padding: 1rem;
+                        border: solid;
+
+
+                    }
+                    iframe {
+                        margin-top: 2rem;
+                        width: 80%;
+                        margin-left: 10%;
+                    }
+                }
+                .posters {
+                    width: 100%;
+                    margin-bottom: 5rem;
+                    p {
+                        font-size: 3rem;
+                        width: 100%;
+                        margin: 0;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        background-color: burlywood;
+                        padding: 1rem;
+                        border: solid;
+                    }
+                    img {
+                        width: 90%;
                         margin-left: 2rem;
-                        font-family: fantasy;
-                        color: variables.$text-color;
-                    
+                    }
+
+                }
+                .video_c_container {
+                    width: 100%;
+                    margin: 0;
+                    .video {
+                        width: 100%;
+                        margin: 0;
+                        margin-left: 0.8rem;
+                        p {
+                            margin: 0;
+                            margin-top: 2rem;
+                            margin-bottom: 2rem;
+                            background-color: burlywood;
+                            padding: 1rem;
+                            border: solid;
+                        }
+
+                        iframe {
+                            width: 60%;
+                            margin-left: 20%;
+                        }
+                    }
+                }
+
+                div {
+                    .titulo {
+                        width: 90%;
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+                    }
+                }
+
+                .reseñas-titulo {
+                    width: 100%;
+                    margin: 0;
+                    .wakanda-container {
+                        width: 100%;
+                        margin: 0;
+                        a {
+                            font-size: 5rem;
+                            background-color: aqua;
+                            padding: 0.5rem;
+                        }
+                    }
+                    .reseñas {
+                        width: 90%;
+                        font-size: 2.5rem;
+                        background-color: coral;
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 3rem;
+                        margin-bottom: 4rem;
+                        padding: 1rem;
+                        border: solid;
+                    }
+                }
+                .trailers {
+                    width: 100%;
+                    margin: 0;
+                    iframe {
+                        width: 90%;
+                        margin-left: 5%;
                     }
                 }
             }
-            .contacto-container {
-                display: flex;
-                flex-direction: column;
-                margin: 2rem;
-    
-                p {
-                    font-size: 3rem;
-                    width: 700px;
-                    font-family: 'Russo One', sans-serif;
-                    background-image: linear-gradient(to left, rgb(108, 194, 255), rgb(0, 110, 255));
-                    padding: 3rem;
-                    border: solid 0.2rem;
-                    
+
+            .posters-container {
+                width: 100%;
+                div {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 5rem;
+                    .pelis_text {
+                        width: 90%;
+                        margin: 0;
+                        margin-left: 5%;
+                        font-size: 2.5rem;
+                        background-color: burlywood;
+                        padding: 1rem;
+                        border: solid;
+                    }
+                    img {
+                        width: 80%;
+                        margin-left: 10%;
+                    }
                 }
-    
             }
-            .links-container {
-            
-                margin-left: 0.1rem;
-                margin-top: 20rem;
+
+            .playlist-container {
+                width: 100%;
+                margin: 0;
+                .playlist {
+                    margin: 0;
+                    margin-left: 15%;
+                    margin-top: 6rem;
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    iframe {
+                        width: 80%;
+                    }
+                }
+            }
+
+            .game-container {
+                width: 100%;
+                margin: 0;
+                .game-info {
+                    margin: 0;
+                    margin-left: 2rem;
+                    margin-top: 4rem;
+                    width: 90%;
+                    background-color: rgb(255, 213, 43);
+                    padding: 2rem;
+                    border: solid;
+
+
+                }
                 
+                .games {
+                    width: 100%;
+                    margin: 0;
+                    .game-title {
+                        margin: 0;
+                        margin-left: 4rem;
+                        margin-top: 8rem;
+                        margin-bottom: 2rem;
+                        width: 80%;
+                        font-size: rem;
+                        background-color: rgb(187, 235, 255);
+                        padding: 2rem;
+                        border: solid;
+                    }
+                    .game-text {
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 4rem;
+                        width: 90%;
+                        background-color: rgb(161, 255, 255);
+                        padding: 2rem;
+                        border: solid;
+                    }
 
+                    img {
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 4rem;
+                        width: 90%;
+                    }
+                }
             }
-            
-        }
-        
-        .playlist-container {
-            display: flex;
-            flex-direction: column;
-            
-            width: 100%;
-        }
-        .game-title {
-            width: 100%;
-            
+
+            .contacto-container {
+                margin: 0;
+                margin-top: 3rem;
+                margin-bottom: 20rem;
+                p {
+                    width: 80%;
+                    font-size: 4rem;
+                    margin-top: 3rem;
+                }
             }
-        .game-container {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            border: solid;
-            width: 99%;
-            height: 2000px;
-        }
-        .game-text {
-            width: 95%;
-            margin: 1rem;
-        }
-        .games {
-            width: 100%;
-            margin: 0;
-            margin-top: 10rem;
-            border: solid;
+
+            .links-container {
+                margin: 0;
+                margin-top: 3rem;
+                margin-bottom: 6rem;
+                width: 100%;
+                .links {
+                    a {
+                        margin: 0;
+                        font-size: 3rem;
+                    } 
+                }
+            }
+
         }
     }
+
     /*FOOTER*/
-
     footer {
-        margin-top: 40rem;
+        margin-top: 80rem;
     }
+
 }
 
 
@@ -292,207 +345,10 @@
 
 
     /*MAIN*/
-    main {
-        section {
-            article {
-                div {
-                    a{
-                        text-decoration: none;
-                        
-                    }
-                    h1 {
-                        margin-top: 2rem;
-                        font-size: 3rem;
-                        font-family: 'Russo One', sans-serif;
-                        background-image: linear-gradient(to right, rgb(36, 200, 255), rgb(111, 255, 111));
-                        border: solid 0.5rem;
-                        color: variables.$text-color;
-                        width: 100%;
-                        height: auto;
-                    }
-                    h2 {
-                        font-size: 2.2rem;
-                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                        margin-top: 2rem;
-                        margin-left: 2rem;
-                        width: 300px;
-                        height: 12rem;
-                        background-color: aqua;
-                        border: solid 0.2rem;
-                        font-style: oblique;
-                        padding: 1rem;
-                    }
-                    p {
-                        font-size: 3rem;
-                        margin-left: 5rem;
-                        margin-top: 4rem;
-                        font-family: 'Bangers', cursive;
-                        text-decoration: underline;
-                        color: variables.$text-color;
-                    }
-                }
-                .img_container {
-                    height: auto;
-                    width: 50%;
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        margin-top: 0rem;
-                        margin-left: 1rem;
-                    }
 
-                }
-                .posters {
-                    height: auto;
-                    width: 440px;
-                    margin-left: 0.5rem;
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        &:hover {
-                            transform: scale(1.1);
-                            transition: 400ms;
-                        }
-                    }
-                }
-                .spotify {
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    height: 700px;
-                    width: 300px;
-                    margin-left: 6rem;
-                    iframe {
-                        height: 75%;
-                        width: 100%;
-                    }
-                }
-                .video {
-                    p {
-                        background-color: rgb(163, 255, 255);
-                        border: solid 0.2rem;
-                        width: 100%;
-                        margin: 0;
-                        padding: 1rem;
-                    }
-                    height: 800px;
-                    margin-left: 1rem;
-                    iframe {
-                        margin-top: 1rem;
-                        height: 30%;
-                        width: 100%;
-                    }
-                }
-
-                .playlist {
-                    height: 100%;
-                    width: 100%;
-                    margin-left: 6rem;
-                    margin-top: 3rem;
-                    width: 300px;
-                    height: 500px;
-                    iframe {
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-                .titulo{
-                    background-color: aquamarine;
-                    border: solid 0.2rem;
-                    margin: 2rem;
-                    padding: 1rem;
-                    text-decoration: none;
-                
-                }
-                .playlist__text {
-                background-color: rgb(177, 255, 98);
-                    p {
-                        font-size: 3rem;
-                        margin-left: 2rem;
-                        font-family: fantasy;
-                        color: variables.$text-color;
-                    
-                    }
-                }
-            }
-            .contacto-container {
-                display: flex;
-                flex-direction: column;
-                margin: 2rem;
-    
-                p {
-                    font-size: 3rem;
-                    width: 700px;
-                    font-family: 'Russo One', sans-serif;
-                    background-image: linear-gradient(to left, rgb(108, 194, 255), rgb(0, 110, 255));
-                    padding: 3rem;
-                    border: solid 0.2rem;
-                    
-                }
-    
-            }
-            .links-container {
-            
-                margin-left: 0.1rem;
-                margin-top: 20rem;
-                
-
-            }
-            
-        }
-        
-        .playlist-container {
-            display: flex;
-            flex-direction: column;
-            
-            width: 100%;
-        }
-        .game-title {
-            width: 100%;
-            
-            }
-        .game-container {
-            display: flex;
-            flex-direction: column;
-            width: 99%;
-        }
-        .game-text {
-            width: 95%;
-            margin: 1rem;
-            font-size: 5rem;
-        }
-        .games {
-            width: 95%;
-            margin: 0;
-            margin-top: 10rem;
-        }
-    }
     /*FOOTER*/
 
-    footer {
-        margin-top: 40rem;
-    }
+
 
 }
 
@@ -525,11 +381,7 @@
                     }
                 }
         
-            }
-
-
-
-            
+            }    
         }
     }
 
@@ -538,193 +390,244 @@
     main {
         section {
             article {
-                div {
-                    a{
-                        text-decoration: none;
-                        
-                    }
+                width: 100%;
+                .index-info {
                     h1 {
-                        margin-top: 2rem;
                         font-size: 3rem;
-                        font-family: 'Russo One', sans-serif;
-                        background-image: linear-gradient(to right, rgb(36, 200, 255), rgb(111, 255, 111));
-                        border: solid 0.5rem;
-                        color: variables.$text-color;
-                        width: 100%;
-                        height: auto;
-                    }
-                    h2 {
-                        font-size: 2.2rem;
-                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-                        margin-top: 2rem;
-                        margin-left: 2rem;
-                        width: 300px;
-                        height: 12rem;
-                        background-color: aqua;
-                        border: solid 0.2rem;
-                        font-style: oblique;
                         padding: 1rem;
-                    }
-                    p {
-                        font-size: 3rem;
-                        margin-left: 5rem;
-                        margin-top: 4rem;
-                        font-family: 'Bangers', cursive;
-                        text-decoration: underline;
-                        color: variables.$text-color;
                     }
                 }
                 .img_container {
-                    height: auto;
                     width: 100%;
-                    margin: 0;
-                    margin-top: 2rem;
+                    h2 {
+                        margin-top: 4rem;
+                        margin-left: 0.8rem;
+                        font-size: 2rem;
+                        width: 100%;
+                    }
                     p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
+                        font-size: 2.5rem;
+                        width: 100%;
+                        margin-left: 0.8rem;
                         margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
+                        margin-top: 6rem;
                     }
                     img {
-                        height: 100%;
                         width: 100%;
-                        margin-top: 0rem;
-                        margin-left: 1rem;
-                    }
-
-                }
-                .posters {
-                    height: auto;
-                    width: 100%;
-                    margin: 0;
-                    margin-top: 2rem;
-                    p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 10rem;
-                        padding: 1rem;
-                    }
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        &:hover {
-                            transform: scale(1.1);
-                            transition: 400ms;
-                        }
+                        margin-left: 0.8rem;
                     }
                 }
                 .spotify {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 6rem;
+                    margin-bottom: 6rem;
                     p {
-                        background-color: aquamarine;
-                        border: solid 0.2rem;
-                        margin: 0;
-                        margin-bottom: 2rem;
-                        margin-top: 2rem;
-                        padding: 1rem;
-                    }
-                    height: 700px;
-                    width: 300px;
-                    margin-left: 6rem;
-                    iframe {
-                        height: 75%;
+                        font-size: 3rem;
                         width: 100%;
+                        margin: 0;
+                        margin-left: 0.8rem;
+                        background-color: burlywood;
+                        padding: 1rem;
+                        border: solid;
+
+
+                    }
+                    iframe {
+                        width: 80%;
+                        margin-left: 4rem;
                     }
                 }
-                .video {
+                .posters {
+                    width: 100%;
+                    margin-bottom: 5rem;
                     p {
-                        background-color: rgb(163, 255, 255);
-                        border: solid 0.2rem;
+                        font-size: 3rem;
                         width: 100%;
                         margin: 0;
-                        margin-top: 5rem;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        background-color: burlywood;
                         padding: 1rem;
+                        border: solid;
                     }
-                    height: 800px;
-                    margin-left: 1rem;
-                    iframe {
-                        margin-top: 1rem;
-                        height: 30%;
+                    img {
+                        width: 90%;
+                        margin-left: 2rem;
+                    }
+
+                }
+                .video_c_container {
+                    width: 100%;
+                    margin: 0;
+                    .video {
                         width: 100%;
+                        margin: 0;
+                        margin-left: 0.8rem;
+                        p {
+                            margin: 0;
+                            margin-top: 2rem;
+                            margin-bottom: 2rem;
+                            background-color: burlywood;
+                            padding: 1rem;
+                            border: solid;
+                        }
                     }
                 }
 
-                .playlist {
-                    height: 100%;
-                    width: 100%;
-                    margin-left: 6rem;
-                    margin-top: 3rem;
-                    width: 300px;
-                    height: 500px;
-                    iframe {
-                        height: 100%;
-                        width: 100%;
-                    }
-                }
-                .titulo{
-                    background-color: aquamarine;
-                    border: solid 0.2rem;
-                    margin: 2rem;
-                    padding: 1rem;
-                    text-decoration: none;
-                
-                }
-                .playlist__text {
-                background-color: rgb(177, 255, 98);
-                    p {
-                        font-size: 3rem;
+                div {
+                    .titulo {
+                        width: 90%;
+                        margin: 0;
                         margin-left: 2rem;
-                        font-family: fantasy;
-                        color: variables.$text-color;
-                    
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+                    }
+                }
+
+                .reseñas-titulo {
+                    width: 100%;
+                    margin: 0;
+                    .wakanda-container {
+                        width: 100%;
+                        margin: 0;
+                        a {
+                            font-size: 5rem;
+                            background-color: aqua;
+                            padding: 0.5rem;
+                        }
+                    }
+                    .reseñas {
+                        width: 90%;
+                        font-size: 2.5rem;
+                        background-color: coral;
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 3rem;
+                        margin-bottom: 4rem;
+                        padding: 1rem;
+                        border: solid;
+                    }
+                }
+                .trailers {
+                    width: 100%;
+                    margin: 0;
+                    iframe {
+                        width: 90%;
+                        margin-left: 2.5rem;
                     }
                 }
             }
-            .contacto-container {
-                display: flex;
-                flex-direction: column;
-                margin: 2rem;
-                p {
-                    font-size: 3rem;
-                    width: 300px;
-                    font-family: 'Russo One', sans-serif;
-                    background-image: linear-gradient(to left, rgb(108, 194, 255), rgb(0, 110, 255));
-                    padding: 3rem;
-                    border: solid 0.2rem;
+
+            .posters-container {
+                width: 100%;
+                div {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 5rem;
+                    .pelis_text {
+                        width: 90%;
+                        margin: 0;
+                        margin-left: 2rem;
+                        font-size: 2.5rem;
+                        background-color: burlywood;
+                        padding: 1rem;
+                        border: solid;
+                    }
+                    img {
+                        width: 80%;
+                        margin-left: 4rem;
+                    }
                 }
             }
-            .links-container {
-                flex-direction: column;
-                margin-left: 0.1rem;
-                margin-top: 20rem;
-            }
-            .links {
-                margin-top: 5rem;
-            }
-            .game-title {
-            width: 100%;
-            
-            }
-            .game-container {
-                display: flex;
-                flex-direction: column;
-                width: 99%;
-            }
-            .game-text {
-                width: 95%;
-                margin: 1rem;
-            }
-            .games {
-                width: 95%;
+
+            .playlist-container {
+                width: 100%;
                 margin: 0;
-                margin-top: 10rem;
+                .playlist {
+                    margin: 0;
+                    margin-left: 4rem;
+                    margin-top: 6rem;
+                    margin-bottom: 2rem;
+                    width: 100%;
+                    iframe {
+                        width: 80%;
+                    }
+                }
+            }
+
+            .game-container {
+                width: 100%;
+                margin: 0;
+                .game-info {
+                    margin: 0;
+                    margin-left: 2rem;
+                    margin-top: 4rem;
+                    width: 90%;
+                    background-color: rgb(255, 213, 43);
+                    padding: 2rem;
+                    border: solid;
+
+
+                }
+                
+                .games {
+                    width: 100%;
+                    margin: 0;
+                    .game-title {
+                        margin: 0;
+                        margin-left: 4rem;
+                        margin-top: 8rem;
+                        margin-bottom: 2rem;
+                        width: 80%;
+                        font-size: rem;
+                        background-color: rgb(187, 235, 255);
+                        padding: 2rem;
+                        border: solid;
+                    }
+                    .game-text {
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 4rem;
+                        width: 90%;
+                        background-color: rgb(161, 255, 255);
+                        padding: 2rem;
+                        border: solid;
+                    }
+
+                    img {
+                        margin: 0;
+                        margin-left: 2rem;
+                        margin-top: 4rem;
+                        width: 90%;
+                    }
+                }
+            }
+
+            .contacto-container {
+                margin: 0;
+                p {
+                    width: 90%;
+                    font-size: 3rem;
+                    margin-top: 3rem;
+                }
+            }
+
+            .links-container {
+                margin: 0;
+                margin-top: 3rem;
+                margin-bottom: 6rem;
+                width: 100%;
+                .links {
+                    a {
+                        margin: 0;
+                        width: 5px;
+                        font-size: 2rem;
+                    } 
+                }
             }
 
         }
-
-
     }
+
 }
